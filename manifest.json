@@ -1,0 +1,26 @@
+{
+    "short_name": "Fy5RestSoft",
+    "name": "Fy5RestSoftPOS",
+    "icons": [
+      {
+        "src": "images/img1.jpg",
+        "type": "image/svg+xml",
+        "sizes": "512x512"
+      },
+      {
+        "src": "images/img2.jpg",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "images/img1.jpg",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "index.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "theme_color": "#3367D6",
+   "scope":"index.html"
+  }

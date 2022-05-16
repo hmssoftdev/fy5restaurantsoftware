@@ -22,10 +22,10 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-  
+  <link rel="text/javascript" href="script.js">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
+  <link rel="manifest" href="manifest.json">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -38,13 +38,21 @@
 </head>
 
 <body>
-
+  <!-- <div class="container">
+    <center>
+      <div class="add-to">
+        <button type="button" id="butInstall" class="btn btn-primary add-to-btn">Install</button>
+              </div>
+    </center>
+    
+          
+ 
+  </div> -->
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <span>
         <img src="images/LOGO.jpg" alt="">
         </span>
       </a>
@@ -68,7 +76,7 @@
 
     </div>
   </header><!-- End Header -->
-
+  
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
 
@@ -80,7 +88,7 @@
             like a boss</b></h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <a href="#pricing" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Get Free Demo</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -110,10 +118,29 @@
                 FY5 is delivering an honest, courteous, and professional service that ensures complete client satisfaction through the use of skilled, experienced, and dedicated staff.
               </p>
               <div class="text-center text-lg-start">
-                <a href="#contact" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <a type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Get Started</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -125,51 +152,7 @@
         </div>
       </div>
 
-    </section><!-- End About Section -->
-
-    <!-- ======= Values Section ======= -->
-    <!-- <section id="values" class="values">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Our Values</h2>
-          <p>Odit est perspiciatis laborum et dicta</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <img src="assets/img/slider.png" class="img-fluid" alt="">
-              <h3>Ad cupiditate sed est odio</h3>
-              <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <img src="assets/img/card2.png" class="img-fluid" alt="">
-              <h3>Voluptatem voluptatum alias</h3>
-              <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-            <div class="box">
-              <img src="assets/img/slider.png" class="img-fluid" alt="">
-              <h3>Fugit cupiditate alias nobis.</h3>
-              <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>End Values Section -->
-
-    <!-- ======= Counts Section ======= -->
+    </section>
     <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
 
@@ -397,7 +380,7 @@
             </div>
 
             <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
-              <img src="assets/img/features-3.png" class="img-fluid p-4" alt="">
+              <img src="assets/img/featuress.png" class="img-fluid p-4" alt="">
             </div>
 
             <div class="col-xl-4 d-flex content ">
@@ -514,8 +497,7 @@
           </div>
 
           <div class="col-lg-2 col-md-2" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box ">
-              
+            <div class="service-box"> 
               <img src="assets/img/outlet/KITCHEN (2).jpg" class="icon" alt="">
               <h3>Kitchen</h3>
             </div>
@@ -566,10 +548,36 @@
                 <li>Password policies</li>
                 <li class="na">Admin insights</li>
                 <li class="na">Customer Support</li>
+                <!-- <li  data-bs-toggle="collapse" href="#collapseExample"
+                 aria-expanded="false" aria-controls="collapseExample" 
+                 style="color: #2E2EFE" class="">Read more..</li> -->
+                 <li>
+                  <a data-bs-toggle="collapse" href="#collapseExample" ria-expanded="false" aria-controls="collapseExample">
+                   Read More
+                  </a>
+                 </li>
+       
+                 
+                   <li class="collapse na" id="collapseExample">Customize
+                      </li>
+                      <li class="collapse na" id="collapseExample">Stock management
+                      </li>
+                      <li class="collapse na" id="collapseExample">Mobile access
+                      </li>
+                      <li class="collapse na" id="collapseExample">Feedback
+                      </li>
+                      <li class="collapse na" id="collapseExample">Advance table booking
+                      </li>
+                      <li class="collapse na" id="collapseExample">Service - 24x7
+                      </li>
+
+
+                 
               </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-buy">Buy Now</a>
             </div>
           </div>
+         
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
@@ -583,6 +591,27 @@
                 <li>Storage</li>
                 <li class="na">Admin insights</li>
                 <li class="na">Customer Support</li>
+                <li>
+                  <a data-bs-toggle="collapse" href="#collapseExample1" ria-expanded="false" aria-controls="collapseExample">
+                   Read More..
+                  </a>
+                 </li>
+       
+                 
+                   <li class="collapse na" id="collapseExample1">Setup-3 time in a year
+                      </li>
+                      <li class="collapse na" id="collapseExample1">Stock management
+                      </li>
+                      <li class="collapse na" id="collapseExample1">New updation as per policy
+                      </li>
+                      <li class="collapse na" id="collapseExample1">Ticket closure-96 hours
+                      </li>
+                      <li class="collapse na" id="collapseExample1">Online food deliver integration
+                      </li>
+                      <li class="collapse na" id="collapseExample1">Payment getway
+                      </li>
+                      <li class="collapse na" id="collapseExample1">Loyalty program
+                      </li>
               </ul>
               <a href="#" class="btn-buy">Buy Now</a>
             </div>
@@ -599,6 +628,27 @@
                 <li>Storage</li>
                 <li>Admin insights</li>
                 <li>Centralized Licensing</li>
+                <li>
+                  <a data-bs-toggle="collapse" href="#collapseExample2" ria-expanded="false" aria-controls="collapseExample">
+                   Read More..
+                  </a>
+                 </li>
+       
+                 
+                   <li class="collapse na" id="collapseExample2">Setup-3 time in a year
+                      </li>
+                      <li class="collapse" id="collapseExample2">Stock management
+                      </li>
+                      <li class="collapse" id="collapseExample2">New updation as per policy
+                      </li>
+                      <li class="collapse" id="collapseExample2">Ticket closure-96 hours
+                      </li>
+                      <li class="collapse" id="collapseExample2">Online food deliver integration
+                      </li>
+                      <li class="collapse" id="collapseExample2">Payment getway
+                      </li>
+                      <li class="collapse" id="collapseExample2">Loyalty program
+                      </li>
               </ul>
               <a href="#" class="btn-buy">Buy Now</a>
             </div>
@@ -611,21 +661,245 @@
               <div class="price"><sup>$</sup>49<span> / mo</span></div>
               <img src="assets/img/pricing-ultimate.png" class="img-fluid" alt="">
               <ul>
-                <li>Audit logs</li>
-                <li>Anonymous access</li>
-                <li>Capacity planning</li>
+                
+                <li>Select Customize Plan</li>
+                <li>With Admin</li>
+               <li> <br> </li>
+               <li> <br></li>
+               <li> <br> </li>
+               <li style="visibility:hidden;">select </li>
+                <!-- <li>Capacity planning</li>
                 <li>Advanced permissions</li>
-                <li>Customer Support</li>
+                <li>Customer Support</li> -->
+               
               </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
+              <a class="btn-buy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Buy Now</a>
             </div>
           </div>
-
+         
         </div>
-
+       
       </div>
+     
+    </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Free Plan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row"> 
+              <div class="col-12 col-md-6">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      
+                      <th scope="col">Item</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Add</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                   
+                      <td>Dish Menu Creation</td>
+                      <td>1 mth Free</td>
+                      <td><div class="form-check form-switch">
+                          <input class="form-check-input ml-2 switch" type="checkbox" id="flexSwitchCheckDefault" checked>
+                        </div>
+                       
+                      </td>
+                    </tr>
+                     <tr>
+                   
+                      <td>User Record</td>
+                      <td>1 mth Free</td>
+                      <td><div class="form-check form-switch">
+                          <input class="form-check-input ml-2 switch" type="checkbox" id="flexSwitchCheckDefault" checked>
+                        </div>
+                       
+                      </td>
+                    </tr>
+                     <tr>
+                   
+                      <td>Inventory Management</td>
+                      <td>1 mth Free</td>
+                      <td><div class="form-check form-switch">
+                          <input class="form-check-input ml-2 switch" type="checkbox" id="flexSwitchCheckDefault" checked>
+                        </div>
+                       
+                      </td>
+                    </tr>
+                    <!-- <tr>
+                   
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr> -->
+                    <!-- <tr>
+                    
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr> -->
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-12 col-md-6">
+               <div class="row">
+                 <div class="col-12">
+                   <!-- <h1> Billing Details</h1> -->                   
 
-    </section><!-- End Pricing Section -->
+
+                   <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                         Item Billing 
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                      
+                          <div class="d-flex justify-content-between" style="border-bottom: 1px solid;">
+                            <p> All </p> <p> Free/-</p>
+                          </div>
+                          <p class="Lead">Code</p>
+
+                          <div class="row  mt-2">
+                            <div class="col-12 col-md-4">
+                              <p> Referal </p>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control"  placeholder="Referal Code" required>
+
+                            </div>
+                          </div>
+                           <div class="row mt-3">
+                            <div class="col-12 col-md-4">
+                              <p> Discount</p>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" value="OFF100" class="form-control" placeholder="Code" required>
+
+                            </div>
+                          </div>
+                           <div class="row mt-3">
+                            <div class="col-12 col-md-4">
+                              <p>  Quantity</p>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <p>All</p>
+
+                            </div>
+                          </div>
+                          <!-- <div class="d-flex justify-content-between mt-3">
+                            <p> Referal code </p> <input type="text" required> 
+                              
+                          
+                          </div>
+                          <div class="d-flex justify-content-between mt-3">
+
+                          <p> Discount code </p> <input type="text" required> 
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <p> Quantity </p> <p>Number</p>
+                        </div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         Billing Details
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <form class="row g-3 ">
+                            <div class="col-md-12">
+                            
+                              <input type="text" class="form-control" placeholder="Name on bill" id="validationCustom01" required>
+                           
+                            </div>
+                            <div class="col-md-12">
+                            
+                              <input type="text" class="form-control" id="validationCustom01" placeholder="Mobile " required>
+                             
+                            </div> 
+                            <div class="col-md-12">
+                            
+                              <input type="text" class="form-control" id="validationCustom01" placeholder="Email " required>
+                             
+                            </div>
+                            <div class="col-md-12">
+                            
+                              <textarea class="form-control" placeholder="Address" id="validationCustom01" required></textarea>
+                             
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                              <button class="btn btn-primary" type="submit">Proceed</button>
+                            </div>
+                           
+                            </form>
+                            <div class="row mt-4"> 
+                              <div class="col-12 col-md-6">
+                                <button class="btn btn-success" type="submit">Place Order</button>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                <button class="btn btn-danger" type="submit">Empty Card</button>
+                              </div>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+
+
+
+
+
+
+                   
+                 </div>
+               </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <button class="btn btn-success" type="submit">Place Order</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" type="submit">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop"  data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Customize Plan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+   
+          </div>
+          <div class="modal-footer">
+          <!-- data-bs-dismiss="modal"  For Modal Close -->
+            <button type="button" class="btn btn-success">Place Order</button>
+            <button type="button" class="btn btn-danger" >Empty Cart</button> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+   <!-- End Pricing Section -->
 
     <!-- ======= F.A.Q Section ======= -->
   
@@ -688,8 +962,8 @@
                 <h4>Change Password</h4>
               </div>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
+            <!-- End testimonial item -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/s/s5.jpg" alt="">
@@ -807,15 +1081,16 @@
                 <div class="info-box">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p> <a href="tel:+918693045277">+91 8693045277</a> <br><a href="tel:+919702244325"> +91 97022443215</a></p>
+                  <p>  <br><a href="tel:+919004863779"> +91 9004863779</a></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p><a href="mailto:yaqubfarooqui@gmail.com?subject=Interest In Software!&body=Hi Need An Demo!">info@fy5accountability.com </a><br>
-                  fy5mubashir@gmail.com</p>
+                  <br>
+                  <p><a href="mailto:inquiry@fy5restaurantsoftware.com?subject=Interest In Software!&body=Hi Need An Demo!">info@fy5accountability.com </a><br>
+                  </p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -898,7 +1173,7 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.jpg" alt="">
+              <img src="images/LOGO.jpg" alt="">
               <span>FY5</span>
             </a>
             <p> FY5 is delivering an honest, courteous, and professional service that ensures complete client satisfaction through the use of skilled, experienced, and dedicated staff.</p>
@@ -938,8 +1213,8 @@
               154/C, Ground Floor,<br>
               Jama Masjid,  Dharavi Main Rd,<br>
               Mumbai 	400017 <br><br>
-              <strong>Phone:</strong><a href="tel:+919702244325"> +91 9702244325</a><br>
-              <strong>Email:</strong><a href="mailto:yaqubfarooqui@gmail.com?subject=Interest In Software!&body=Hi Need An Demo!">info@fy5accountability.com</a><br>
+              <strong>Phone:</strong><a href="tel:+919004863779"> +91 9004863779</a><br>
+              <strong>Email:</strong><a href="mailto:inquiry@fy5restaurantsoftware.com?subject=Interest In Software!&body=Hi Need An Demo!">info@fy5accountability.com</a><br>
             </p>
 
           </div>
@@ -974,6 +1249,101 @@
   <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
+  <script type="text/javascript">
+if ('serviceWorker' in navigator) {
+	  window.addEventListener('load', function() {
+	    navigator.serviceWorker.register('serviceworker.js').then(function(registration)  {
+        reg=>{
+        reg.showNotification('Hello');
+      }
+	      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	    }, function(err) {
+	      // registration failed :(
+	      console.log('ServiceWorker registration failed: ', err);
+	    });
+	  });
+  } 
+self.addEventListener('notificatonclose',
+event =>{
+  const notification = event.notification;
+  const primaryKey = notification.data.primaryKey;
+  console.log('closed notification' + primaryKey)
+})
+
+  Notification.requestPermission(status =>{
+    console.log('Notification Status',status)
+  })
+
+    let deferredPrompt;
+	var div = document.getElementById('add-to').style.display='none';
+  // document.querySelector('.add-to').style.display='none';
+	var button = document.getElementById('add-to-btn').style.display='none';
+
+
+	window.addEventListener('beforeinstallprompt', (e) => {
+	  // Prevent Chrome 67 and earlier from automatically showing the prompt
+	  e.preventDefault();
+	  // Stash the event so it can be triggered later.
+	  deferredPrompt = e;
+	  div.style.display = 'block';
+
+	  button.addEventListener('click', (e) => {
+	  // hide our user interface that shows our A2HS button
+	  div.style.display = 'none';
+	  // Show the prompt
+	  deferredPrompt.prompt();
+	  // Wait for the user to respond to the prompt
+	  deferredPrompt.userChoice
+	    .then((choiceResult) => {
+	      if (choiceResult.outcome === 'accepted') {
+	        console.log('User accepted the A2HS prompt');
+	      } else {
+	        console.log('User dismissed the A2HS prompt');
+	      }
+	      deferredPrompt = null;
+	    });
+	});
+	});
+
+
+
+
+
+
+	
+
+
+
+	// let deferredPrompt;
+	// var div = document.querySelector('.add-to');
+	// var button = document.querySelector('.add-to-btn');
+	// div.style.display = 'none';
+
+	// window.addEventListener('beforeinstallprompt', (e) => {
+	//   // Prevent Chrome 67 and earlier from automatically showing the prompt
+	//   e.preventDefault();
+	//   // Stash the event so it can be triggered later.
+	//   deferredPrompt = e;
+	//   div.style.display = 'block';
+
+	//   button.addEventListener('click', (e) => {
+	//   // hide our user interface that shows our A2HS button
+	//   div.style.display = 'none';
+	//   // Show the prompt
+	//   deferredPrompt.prompt();
+	//   // Wait for the user to respond to the prompt
+	//   deferredPrompt.userChoice
+	//     .then((choiceResult) => {
+	//       if (choiceResult.outcome === 'accepted') {
+	//         console.log('User accepted the A2HS prompt');
+	//       } else {
+	//         console.log('User dismissed the A2HS prompt');
+	//       }
+	//       deferredPrompt = null;
+	//     });
+	// });
+	// });
+  </script>
   <script src="assets/js/main.js"></script>
 
 </body>
