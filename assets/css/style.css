@@ -423,6 +423,10 @@ section {
   .hero {
     background-attachment: fixed;
   }
+  #feat{
+    width: 300px;
+    height: 335px;
+  }
 }
 @media (max-width: 991px) {
   .hero {
@@ -602,6 +606,10 @@ section {
 @media (max-width: 768px) {
   .features .feture-tabs h3 {
     font-size: 28px;
+  }
+  #feat{
+    width: 300px;
+    height: 335px;
   }
 }
 .features .feture-tabs .nav-pills {
@@ -2046,4 +2054,13 @@ section {
 .switch{
   width: 3rem !important;
   height: 1.5rem;
+}
+@media all and(max-width:1024px) {
+  .services .service-box .icon{
+    width: 80px !important;
+  }
+  .outlet{
+   font-size: 1rem!important;
+  }
+  
 }

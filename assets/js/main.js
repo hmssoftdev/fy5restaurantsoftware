@@ -116,6 +116,15 @@
     this.classList.toggle('bi-x')
   })
 
+  on('onChange', '#switchValue', function () {    
+    if ((this).is(':checked')) {
+    console.log("Hello")
+    }
+    else {
+       console.log("ansari")
+    }
+});
+
   /**
    * Mobile nav dropdowns activate
    */
